@@ -9,6 +9,7 @@ self.addEventListener('install', function(e) {
       '/contact_us.html',
       '/data.html',
       '/company_profile.html',
+      '/manifest.json',
      ]);
    })
  );
