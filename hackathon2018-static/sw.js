@@ -10,6 +10,7 @@ self.addEventListener('install', function(e) {
       '/data.html',
       '/company_profile.html',
       '/manifest.json',
+      '/img/icon-512.png',
      ]);
    })
  );
