@@ -1,24 +1,6 @@
 self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('airhorner').then(function(cache) {
-     cache.matchAll('.gif').then(function (response) {
-       response.forEach(function(element, index, array) {
-         console.log('saved gif element',element)
-         // cache.delete(element);
-       });
-     })
-     cache.matchAll('.png').then(function (response) {
-       response.forEach(function(element, index, array) {
-         console.log('saved png element',element)
-         // cache.delete(element);
-       });
-     })
-     cache.matchAll('.jpg').then(function (response) {
-       response.forEach(function(element, index, array) {
-         console.log('saved jpg element',element)
-         // cache.delete(element);
-       });
-     })
      return cache.addAll([
       '/',
       '/index.html',
@@ -30,6 +12,23 @@ self.addEventListener('install', function(e) {
       '/manifest.json',
       '/img/icon-512.png',
       '/img/icon.png',
+      'index_r1_c1.gif',
+      'index_r2_c1.gif',
+      'index_r2_c3.gif',
+      'index_r2_c5.gif',
+      'index_r3_c5.gif',
+      'start_r3_c7.gif',
+      'index_r3_c9.gif',
+      'start_r6_c7.gif',
+      'index_r4_c3.gif',
+      'index_r6_c8.gif',
+      'a_index_r6_c6.gif',
+      'index_r6_c5.gif',
+      'index_r5_c4.gif',
+      'a_start_r5_c2.gif',
+      'index_r5_c1.gif',
+      'index_r7_c2.gif',
+      'index_r8_c6.gif',
      ]);
    })
  );
