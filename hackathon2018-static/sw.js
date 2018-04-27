@@ -1,6 +1,8 @@
+var CACHE_NAME = 'v1'
+
 self.addEventListener('install', function(e) {
  e.waitUntil(
-   caches.open('airhorner').then(function(cache) {
+   caches.open(CACHE_NAME).then(function(cache) {
      return cache.addAll([
       '/',
       '/index.html',
