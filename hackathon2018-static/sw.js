@@ -1,8 +1,6 @@
-var CACHE_NAME = 'v1'
-
 self.addEventListener('install', function(e) {
  e.waitUntil(
-   caches.open(CACHE_NAME).then(function(cache) {
+   caches.open('v1').then(function(cache) {
      cache.matchAll('/img/').then(function (response) {
        response.forEach(function(element, index, array) {
          // cache.delete(element);
