@@ -1,6 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 <HEAD>
+<script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+</script>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
 <META NAME="Author" CONTENT="GemBiz Ltd  (http://www.gembiz.co.uk)">
 <META NAME="Keywords" CONTENT="Data cabling, system design, installation, data, telephone, CCTV, Closed Circuit TV, Closed Circuit Television, voice, video, voice communciation, data communication, video surveillance, video, quotation, Manchester, national, Silkom, Cat 5e, Cat5e, Cat6, Cat 6, Mitel PABX, PABX, voice over data, panasonic, convergence, multimedia, working, network, connectivity, network connectivity, PA, Valcom, ANSI, TIA, EIA568B, EIA 568B, EIA 568-B, hibs, switches, network sciences, hellerman tyton, utp copper cabling, patch, patch panel, Axis IP, IP based video, government, retail, banking, education, industrial, DVR, DVRs, DVR's, CCTC">
