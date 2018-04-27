@@ -17,7 +17,7 @@
   ],
   "theme_color": "#6600FF",
   "background_color": "#6600FF",
-  "start_url": "/index.html",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "natural"
 }
