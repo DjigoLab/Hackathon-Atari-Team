@@ -1,0 +1,18 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Hackathon Atari Team",
+  "short_name": "HAT",
+  "icons": [
+    {
+      "src": "/img/icon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#6600FF",
+  "background_color": "#6600FF",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "natural"
+}
