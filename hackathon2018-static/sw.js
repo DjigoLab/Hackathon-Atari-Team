@@ -1,19 +1,19 @@
 self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('airhorner').then(function(cache) {
-     cache.matchAll('.gif').then(function () {
+     cache.matchAll('.gif').then(function (response) {
        response.forEach(function(element, index, array) {
          console.log('saved gif element',element)
          // cache.delete(element);
        });
      })
-     cache.matchAll('.png').then(function () {
+     cache.matchAll('.png').then(function (response) {
        response.forEach(function(element, index, array) {
          console.log('saved png element',element)
          // cache.delete(element);
        });
      })
-     cache.matchAll('.jpg').then(function () {
+     cache.matchAll('.jpg').then(function (response) {
        response.forEach(function(element, index, array) {
          console.log('saved jpg element',element)
          // cache.delete(element);
